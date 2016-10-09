@@ -15,11 +15,11 @@ Media queries
 
 These media queries were taken from the Bootstrap CSS Framework (version 3). They are awesome. The only difference is that SomeGrid uses em instead of px, so all pixel values from Bootstrap were divided by 16.
 
-| **Extra small devices - Phones (&lt;46.8125em)** | **Small devices - Tablets (&ge;46.875em)** | **Medium devices - Desktops (&ge;60.625em)** | **Large devices - Desktops (&ge;73.125em)**
---- | | --- | | --- | | --- | | ---
-**Grid behavior** | Horizontal at all times | Collapsed to start, horizontal above breakpoints |  |
-**Container width** | Auto (0.9375em on the left and the right) | 46.875em | 60.625em | 73.125em
-**Class prefix** | `.col-xs-` | `.col-` |  |
+|                 | Extra small devices - Phones (<46.8125em) | Small devices - Tablets (≥46.875em)              | Medium devices - Desktops (≥60.625em)            | Large devices - Desktops (≥73.125em)             |
+|-----------------|-------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------------------------------------------------|
+| Grid behavior   | Horizontal at all times                   | Collapsed to start, horizontal above breakpoints | Collapsed to start, horizontal above breakpoints | Collapsed to start, horizontal above breakpoints |
+| Container width | Auto (0.9375em on the left and the right) | 46.875em                                         | 60.625em                                         | 73.125em                                         |
+| Class prefix    | `.col-xs-`                                | `.col-`                                          | `.col-`                                          | `.col-`                                          |
 
 Grid
 ---------------
@@ -142,7 +142,7 @@ To hide certain parts of your page on certain screen sizes, there are a few visi
 These classes should speak for themselves.
 
 [jasper-van-merle]: https://jaspervanmerle.com/
-[github]: https://github.com/
+[github]: https://github.com/JvanMerle/some-grid
 [demo-grid]: examples/grid.html
 [demo-grid-offsets]: examples/grid-offsets.html
 [demo-visibility]: examples/visibility.html
