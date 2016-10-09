@@ -1,7 +1,7 @@
 SomeGrid
 ==========
 
-SomeGrid is a very easy CSS grid framework which uses Flexbox. SomeGrid was made using SASS, is fully responsive and has 12 columns. It's far from perfect, but it works. SomeGrid is made by [Jasper van Merle][jasper-van-merle]
+SomeGrid is a very easy CSS grid framework which uses Flexbox. SomeGrid was made using SCSS, is fully responsive and has 12 columns. It's far from perfect, but it works. SomeGrid is made by [Jasper van Merle][jasper-van-merle]
 
 Download
 --------
@@ -143,6 +143,6 @@ These classes should speak for themselves.
 
 [jasper-van-merle]: https://jaspervanmerle.com/
 [github]: https://github.com/JvanMerle/some-grid
-[demo-grid]: examples/grid.html
-[demo-grid-offsets]: examples/grid-offsets.html
-[demo-visibility]: examples/visibility.html
+[demo-grid]: https://jaspervanmerle.com/some-grid/examples/grid.html
+[demo-grid-offsets]: https://jaspervanmerle.com/some-grid/examples/grid-offsets.html
+[demo-visibility]: https://jaspervanmerle.com/some-grid/examples/visibility.html
