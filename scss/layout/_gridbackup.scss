@@ -1,0 +1,102 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+/* Grid container */
+.grid {
+    width: em-calc(1170);
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Row container */
+    .row {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-top: em-calc(16);
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    @include breakpoint(xs-only) {
+        padding-left: em-calc($grid-mobile-padding);
+        padding-right: em-calc($grid-mobile-padding);
+        width: auto;
+        display: block;
+    }
+
+    @include breakpoint(sm-only) {
+        width: em-calc(750);
+    }
+
+    @include breakpoint(md-only) {
+        width: em-calc(970);
+    }
+}
+
+/* Full-sized grid container */
+.grid-fluid {
+    @extend .grid;
+    width: calc(100% - #{em-calc($grid-mobile-padding * 2)});
+}
+
+@for $i from 1 to $grid-columns + 1 {
+    .col-#{$i} {
+        @if $grid-gutter > 0 {
+            width: calc(#{percentage(1 / $grid-columns * $i)} - #{em-calc($grid-gutter * 2)});
+            padding-left: em-calc($grid-gutter);
+            padding-right: em-calc($grid-gutter);
+        } @else {
+            width: percentage(1 / $grid-columns * $i);
+        }
+
+        .row {
+            width: calc(100% + #{em-calc($grid-gutter * 2)});
+            margin-left: -#{em-calc($grid-gutter)};
+        }
+
+        @include breakpoint(xs-only) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+
+            .row {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .col-xs-#{$i} {
+        @if $grid-gutter > 0 {
+            width: calc(#{percentage(1 / $grid-columns * $i)} - #{em-calc($grid-gutter * 2)});
+            padding-left: em-calc($grid-gutter);
+            padding-right: em-calc($grid-gutter);
+        } @else {
+            width: percentage(1 / $grid-columns * $i);
+        }
+
+        .row {
+            width: calc(100% + #{em-calc($grid-gutter * 2)});
+            margin-left: -#{em-calc($grid-gutter)};
+        }
+    }
+
+    .col-offset-#{$i} {
+        margin-left: percentage(1 / $grid-columns * $i);
+
+        @include breakpoint(xs-only) {
+            margin-left: 0;
+        }
+    }
+
+    .col-xs-offset-#{$i} {
+        margin-left: percentage(1 / $grid-columns * $i);
+    }
+}

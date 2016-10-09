@@ -1,0 +1,9 @@
+/* Amount of px per em */
+$px-per-em: 16;
+
+/* Grid settings */
+$grid-columns: 12;
+/* Grid gutter is in px */
+$grid-gutter: 15;
+/* On small devices, the grid goes into full width. Specify an amount of pixels of white space on the left and right side below. */
+$grid-mobile-padding: 15;
