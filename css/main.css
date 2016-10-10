@@ -21,7 +21,7 @@
   .grid, .grid-fluid {
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: auto;
+    width: 100%;
     display: block;
   }
 }
