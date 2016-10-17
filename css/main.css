@@ -1,17 +1,11 @@
-/* Importing the base files */
-/* Amount of px per em */
-/* Grid settings */
-/* Grid gutter is in px */
-/* On small devices, the grid goes into full width. Specify an amount of pixels of white space on the left and right side below. */
-/* Breakpoints */
-/* Layout files */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+html {
   box-sizing: border-box;
 }
 
-/* Grid container */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .grid, .grid-fluid {
   width: 73.125em;
   margin-left: auto;
@@ -36,12 +30,10 @@
   }
 }
 
-/* Full-sized grid container */
 .grid-fluid {
   width: 100%;
 }
 
-/* Row container */
 .row {
   width: 100%;
   display: flex;

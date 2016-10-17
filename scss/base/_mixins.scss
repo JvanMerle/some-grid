@@ -1,4 +1,4 @@
-/* Breakpoints */
+// Breakpoints
 @mixin breakpoint($bp) {
     @if $bp == "xs-only" {
         @media (max-width: em-calc(749)) {

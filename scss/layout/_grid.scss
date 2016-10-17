@@ -1,10 +1,12 @@
-*, *:before, *:after {
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
+html {
     box-sizing: border-box;
 }
 
-/* Grid container */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+// Grid container
 .grid {
     width: em-calc(1170);
     margin-left: auto;
@@ -26,13 +28,13 @@
     }
 }
 
-/* Full-sized grid container */
+// Full-sized grid container
 .grid-fluid {
     @extend .grid;
     width: 100%;
 }
 
-/* Row container */
+// Row container
 .row {
     width: 100%;
 
